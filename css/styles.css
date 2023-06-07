@@ -1,0 +1,320 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/* Custom Properties */
+:root {
+    --dark-bg: hsl(243, 87%, 12%);
+    --light-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyna: hsl(170, 45%, 43%);
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+
+}
+
+/* Resetting page */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* General Settings */
+
+html {
+    font-size: 16px;
+}
+
+*,
+body {
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2,
+input[type="button"],
+header nav a {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+header .container {
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+
+header nav>ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+header nav a {
+    margin: 0 1rem;
+    color: var(--dark-bg);
+
+}
+
+header nav a:hover {
+    font-size: 1.2rem;
+    color: var(--bright-blue);
+}
+
+/* Hero Section */
+.hero-right img {
+    width: 500px;
+}
+
+.hero-section h2 {
+    width: 70%;
+}
+
+
+
+/* Productivity */
+
+.productivity {
+    background: url('/images/bg-curve-desktop.svg');
+}
+
+#quote-sign {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Early Access */
+
+.early-access .container {
+    justify-content: space-between;
+    margin: 0rem 5rem;
+}
+
+.early-access input[type="email"] {
+    padding: 0.7rem 14rem 0.7rem 0.7rem;
+    margin: 0rem 0rem 0.7rem 0rem;
+    border: solid 0.7px gray;
+}
+
+::placeholder {
+    color: rgba(128, 128, 128, 0.53);
+}
+
+
+
+/* Hero Image */
+.hero-image {
+    width: 450px;
+}
+
+
+.early-access .container .hero-left p {
+    width: 63%;
+    line-height: 30px;
+    color: var(--light-grayish-blue)
+}
+
+
+/* Footer */
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem;
+}
+
+footer .about p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+footer .about p img {
+    margin-right: 1rem;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+
+footer nav ul li {
+    margin-bottom: 1rem;
+}
+
+footer nav ul a:hover {
+    color: var(--light-blue);
+}
+
+footer .fa-brands {
+    border: solid 1px white;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+
+footer .fa-brands:hover {
+    color: var(--bright-blue);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+
+/* Responsiveness Styles and Settings */
+
+@media(min-width: 320px) and (max-width: 768px) {
+
+    body .container {
+        display: flex;
+        margin: 2rem 2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .navbar a {
+        margin: 0rem 0.2rem;
+    }
+
+    .navbar .logo img {
+        width: 100px;
+    }
+
+    .navbar nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .hero-section .container,
+    .productivity .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-section img,
+    .productivity img {
+        width: 100%;
+    }
+
+    .hero-section h2 {
+        width: 100%;
+        font-size: 1.7rem;
+        line-height: 30px;
+    }
+
+    .hero-section .para {
+        width: 100%;
+    }
+
+    .productivity h2 {
+        font-size: 1.2rem;
+    }
+
+    .productivity .para {
+        text-align: left;
+    }
+
+    .productivity .btn-outline~img {
+        width: 5%;
+    }
+
+
+    section.early-access .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 0rem;
+        text-align: center;
+        padding: 3rem 5rem;
+        width: 100%;
+
+    }
+
+    .early-access h2 {
+        font-size: 1.2rem;
+    }
+
+    .early-access .container .hero-left p {
+        font-size: 0.9rem;
+        line-height: 25px;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+
+    .hero-right input[type="email"] {
+        padding: 0.5rem 5rem 0.7rem 1rem;
+        border: solid 0.12rem gray;
+        margin: 0rem 0.7rem 0rem 0rem;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        /* align-items: center; */
+        justify-content: space-between;
+    }
+
+    footer .about {
+        margin-bottom: 3rem;
+    }
+
+    footer nav {
+        text-align: left;
+        justify-content: flex-start;
+        margin-bottom: 4rem;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .fa-brands {
+        border: solid 1px white;
+        padding: 0.6rem 0.8rem;
+        border-radius: 50%;
+        margin: 0.3rem;
+    }
+
+
+}
