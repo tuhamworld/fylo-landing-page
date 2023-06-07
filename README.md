@@ -75,5 +75,5 @@ Will continue to work on the project if there are minor things to adjust based o
 ## Author
 
 - Website - [Tunde Abdulhamid Sanusi](https://www.tuhamworld.vercel.app)
-- Twitter - [@yourusername](https://www.twitter.com/tuhamworld)
+- Twitter - [@tuhamworld](https://www.twitter.com/tuhamworld)
 
